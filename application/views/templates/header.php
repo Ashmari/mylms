@@ -23,10 +23,10 @@
       margin: 0 !important;
     }
     .activated {
-      display: block;
+      display: block !important;
     }
     .deactivated {
-      display: none;
+      display: none !important;
     }
   </style>
   <script src=<?php echo base_url('public/jquery/jquery-3.1.1.min.js'); ?>></script>

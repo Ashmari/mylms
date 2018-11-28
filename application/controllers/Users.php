@@ -11,7 +11,7 @@ class Users extends CI_Controller
 
     $this->load->model('users_model');
     $this->load->library('session');
-    $this->load->helper('url');
+    // $this->load->helper('url');
   }
 
   public function login()
@@ -44,7 +44,7 @@ class Users extends CI_Controller
           'data' => null,
           'error' => array(
             'type' => 'auth',
-            'message' => 'Invalid username or password!!!'
+            'message' => 'Invalid username or password'
           )
         ));
       }

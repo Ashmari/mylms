@@ -8,7 +8,7 @@ class Members_model extends CI_Model
     $this->load->database();
   }
 
-  public function insert_memeber($data)
+  public function insert_member($data)
   {
     // $data: assoc array of member details.
     // insert member to the database
@@ -28,10 +28,10 @@ class Members_model extends CI_Model
   public function get_all()
   {
     // get members details by  member table
-    $this->db->select("*");  
-    $this->db->from("member");  
-    $query = $this->db->get();  
-    return $query;  
+    $this->db->select("*");
+    $this->db->from("member");
+    $query = $this->db->get();
+    return $query->result_array();
 
   }
 
